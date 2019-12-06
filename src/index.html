@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
+    <title>Document</title>
+</head>
+<body id="home">
+        <!-- Navbar -->
+        <nav id="navbar">
+          <h1 class="logo">
+            <span class="text-primary">
+              <i class="fas fa-book-open"></i> Text</span> File Compressor
+          </h1>
+          <ul>
+            <li><a id = "upload" href="#up">Upload File</a></li>
+            <li><a href="#enc">Add Text</a></li>
+          </ul>
+        </nav>
+        <!-- Header: Showcase -->
+        <header id="showcase">
+          <div class="showcase-content">
+            <h1 class="l-heading">
+              Compress and Encrypt Your Text Files
+            </h1>
+            <p class="lead">
+              Encrypt and compress files using Huffman encoding and provides the compressed version of the file to download.
+            </p>
+            <a href="#enc" class="btn">Compress Now</a>
+          </div>
+        </header>
+
+        <section id="enc" class="input-section bg-light"> 
+          <h1 class="m-heading">Enter Text To Encrypt</h1>
+          <textarea id="text" placeholder="Enter the Text To Compress" class="text-area"></textarea>
+          <button id="encrypt-btn" class="btn">Encrypt Text</button>
+        </section>
+
+        <section id="up" class="upload-section bg-dark">
+          <h1 class="c-heading">Upload Files</h1>
+          <div class="cards">
+            <div class="right card bg-light">
+              <h3 class="s-heading">Encrypt or Compress Files</h3>
+              <p class="p-1">You can Upload any text file and in return you will get two files one containing
+                compressed data and other contains the key to decrypt the file text.
+              </p>
+              <input class="btn upload" id = "compress" type="file" title="Text File" accept=".txt, .text"></input>
+            </div>
+            <div class="card bg-light">
+              <h3 class="s-heading">Decrypt or Decompress the Files</h3>
+              <p class="p-1">You have to  <span class="heavy">Upload two files</span> inorder to deccrypt and decompress it in return you will get a file containing the original
+                decompressed data.
+                </p>
+                <input class="btn upload" id = "decompress" type="file" title="Text File" accept=".txt, .text" multiple></input>  
+            </div>
+          </div>
+        </section>
+
+        <footer id="main-footer" class="bg-light text-center py-1">
+          <div class="container">
+            <p>Copyright &copy; 2019, TextFileCompressor, All Rights Reserved</p>
+          </div>
+        </footer>
+      </body>
+</html>
