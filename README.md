@@ -1,5 +1,10 @@
 # compressorProject
 
+Dependencies
+
+1. Should have node.js installed in the machine.
+2. Should have installed npm package manager in machine.
+
 Running Instruction
 
 1. Clone or Download Zip folder
