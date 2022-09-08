@@ -31,7 +31,7 @@
     "jest": "^24.9.0",
     "js-priority-queue": "^0.1.5",
     "jshint": "^2.10.3",
-    "jszip": "^3.2.2",
+    "jszip": "^3.7.0",
     "regenerator-runtime": "^0.13.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
